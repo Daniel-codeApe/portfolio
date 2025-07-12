@@ -95,8 +95,11 @@
   }
 
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply text-foreground transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-background
   }
 }
 

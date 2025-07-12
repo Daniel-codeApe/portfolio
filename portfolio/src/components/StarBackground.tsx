@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
 import type { star, meteor } from "../lib/types";
 
-export const StarBackground = () => {
+export const StarBackground = ({ isDarkMode }: { isDarkMode: boolean }) => {
+	if (!isDarkMode) {
+		return null;
+	}
 	const [stars, setStars] = useState<star[]>([]);
 	const [meteors, setMeteors] = useState<meteor[]>([]);
 
 	useEffect(() => {
 		generateStars();
 		generateMeteors();
+
+		const handleResize = () => {
+			generateStars();
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
 	const generateStars = () => {
@@ -24,9 +35,8 @@ export const StarBackground = () => {
 				opacity: Math.random() * 0.5 + 0.5,
 				animationDuration: Math.random() * 4 + 2,
 			});
-
-			setStars(newStars);
 		}
+		setStars(newStars);
 	};
 
 	const generateMeteors = () => {
@@ -41,9 +51,8 @@ export const StarBackground = () => {
 				delay: Math.random() * 15,
 				animationDuration: Math.random() * 3 + 3,
 			});
-
-			setMeteors(newMeteors);
 		}
+		setMeteors(newMeteors);
 	};
 
 	return (
@@ -58,8 +67,9 @@ export const StarBackground = () => {
 							height: `${star.size}px`,
 							left: `${star.x}%`,
 							top: `${star.y}%`,
-							opacity: `${star.opacity}`,
+							opacity: star.opacity,
 							animationDuration: `${star.animationDuration}s`,
+							// background: "white",
 						}}
 					/>
 				);
@@ -77,6 +87,7 @@ export const StarBackground = () => {
 							top: `${meteor.y}%`,
 							animationDelay: `${meteor.delay}`,
 							animationDuration: `${meteor.animationDuration}s`,
+							// background: "white",
 						}}
 					/>
 				);
