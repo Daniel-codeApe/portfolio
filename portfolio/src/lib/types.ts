@@ -15,3 +15,17 @@ export interface meteor {
 	delay: number;
 	animationDuration: number;
 }
+
+export interface skill {
+	name: string;
+	level: number;
+	category: string;
+}
+
+export interface project {
+	id: number;
+	title: string;
+	description: string;
+	referee: string;
+	contact: string;
+}

@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { StarBackground } from "../components/StarBackground";
 import { ThemeToggle } from "../components/ThemeToggle";
+import { HeroSection } from "../components/HeroSection";
+import { AboutSection } from "../components/About";
+import { SkillsSection } from "../components/Skills";
+import { ProjectsSection } from "../components/Projects";
+import { ContactSection } from "../components/Contacts";
+import { Footer } from "../components/Footer";
 
 export function Home() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,6 +36,17 @@ export function Home() {
 
 			{/* Navbar */}
 			<Navbar />
+
+			{/* Main content */}
+			<main>
+				<HeroSection />
+				<AboutSection />
+				<SkillsSection />
+				<ProjectsSection />
+				<ContactSection />
+			</main>
+
+			<Footer />
 		</div>
 	);
 }

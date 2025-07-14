@@ -23,7 +23,7 @@ export const StarBackground = ({ isDarkMode }: { isDarkMode: boolean }) => {
 
 	const generateStars = () => {
 		const numberOfStars = Math.floor(
-			(window.innerWidth * window.innerHeight) / 1000
+			(window.innerWidth * window.innerHeight) / 10000
 		);
 		const newStars: star[] = [];
 		for (let i = 0; i < numberOfStars; i++) {

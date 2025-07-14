@@ -16,7 +16,7 @@ export const ThemeToggle = () => {
 			setIsDarkMode(false);
 			document.documentElement.classList.remove("dark");
 			document.documentElement.style.background =
-				"radial-gradient(circle, white, skyblue)";
+				"linear-gradient(to bottom right, #f0faff, #b3e5fc, #81d4fa)";
 		}
 	});
 
