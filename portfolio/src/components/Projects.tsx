@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import type { project } from "../lib/types";
 
 const projects: project[] = [
