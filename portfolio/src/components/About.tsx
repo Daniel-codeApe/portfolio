@@ -32,7 +32,8 @@ export const AboutSection = () => {
 							</a>
 
 							<a
-								href=""
+								href="/CV.pdf"
+								download={"My_CV"}
 								className="px-6 py-2 rounded-full c=border border-primary text-primary hover:bg-primary/10 transition-color"
 							>
 								Download CV
