@@ -1,4 +1,4 @@
-// import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { project } from "../lib/types";
 
 const projects: project[] = [
@@ -58,7 +58,7 @@ export const ProjectsSection = () => {
 					})}
 				</div>
 
-				{/* <div className="text-center mt-12">
+				<div className="text-center mt-12">
 					<a
 						className="cosmic-button w-fit flex items-center mx-auto gap-2"
 						target="_blank"
@@ -66,7 +66,7 @@ export const ProjectsSection = () => {
 					>
 						Checkout My Github <ArrowRight size={16} />
 					</a>
-				</div> */}
+				</div>
 			</div>
 		</section>
 	);
