@@ -33,7 +33,7 @@ jobs:
         run: |
           npx gh-pages -d dist \
             -u "github-actions <support@github.com>" \
-            -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Daniel-codeApe/portfolio.git
+            -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/aaniel-codeape/portfolio.git
         working-directory: ./portfolio
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
