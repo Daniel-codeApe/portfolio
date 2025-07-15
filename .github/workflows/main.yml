@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy Vite site to GitHub Pages
 
 on:
@@ -14,7 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node
+      - name: Debug - list files
+        run: ls -lah
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -22,13 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build the site
+      - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         env:
-          CI: true
-          GIT_USER: github-actions
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npx gh-pages -d dist -u "github-actions <support@github.com>"
+        run: npx gh-pages -d dist -u "github-actions <support@github.com>"
