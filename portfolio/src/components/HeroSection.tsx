@@ -23,8 +23,7 @@ export const HeroSection = () => {
 					<p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
 						A recent graduate from QUT, skilled in backend development but also
 						have experience of wordpress and react. Had two real-world working
-						experience as web-developer and backend developer, currently working
-						an operation and maintenance job in a Logistics company
+						experience as web-developer and backend developer.
 					</p>
 
 					<div className="pt-4 opacity-0 animate-fade-in-delay-4">

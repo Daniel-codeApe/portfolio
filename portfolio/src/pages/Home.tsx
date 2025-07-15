@@ -8,6 +8,7 @@ import { SkillsSection } from "../components/Skills";
 import { ProjectsSection } from "../components/Projects";
 import { ContactSection } from "../components/Contacts";
 import { Footer } from "../components/Footer";
+import { CloudBackground } from "../components/CloudBackground";
 
 export function Home() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,6 +34,7 @@ export function Home() {
 
 			{/* Background */}
 			<StarBackground isDarkMode={isDarkMode} />
+			<CloudBackground isDarkMode={isDarkMode} />
 
 			{/* Navbar */}
 			<Navbar />

@@ -10,26 +10,20 @@ export const ThemeToggle = () => {
 		if (storedTheme === "dark") {
 			setIsDarkMode(true);
 			document.documentElement.classList.add("dark");
-			document.documentElement.style.background = "black";
 		} else {
 			localStorage.setItem("theme", "light");
 			setIsDarkMode(false);
 			document.documentElement.classList.remove("dark");
-			document.documentElement.style.background =
-				"linear-gradient(to bottom right, #f0faff, #b3e5fc, #81d4fa)";
 		}
 	});
 
 	const toggleTheme = () => {
 		if (isDarkMode) {
 			document.documentElement.classList.remove("dark");
-			document.documentElement.style.background =
-				"radial-gradient(circle, white, skyblue)";
 			localStorage.setItem("theme", "light");
 			setIsDarkMode(false);
 		} else {
 			document.documentElement.classList.add("dark");
-			document.documentElement.style.background = "black";
 			localStorage.setItem("theme", "dark");
 			setIsDarkMode(true);
 		}

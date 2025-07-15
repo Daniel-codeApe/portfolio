@@ -29,3 +29,13 @@ export interface project {
 	referee: string;
 	contact: string;
 }
+
+export interface cloud {
+	id: number;
+	top: string;
+	left: string;
+	width: string;
+	height: string;
+	delay: string;
+	animationDuration: number;
+}

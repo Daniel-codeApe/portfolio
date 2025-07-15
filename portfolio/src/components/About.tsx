@@ -16,8 +16,8 @@ export const AboutSection = () => {
 
 						<p className="text-muted-foreground">
 							Passionate Junior with over 1 year of experience in real-world
-							projects, including a full-fledged website, a CRM household
-							application and a Logistics management application.
+							projects, including a full-fledged website and a CRM household
+							application.
 						</p>
 
 						<p className="text-muted-foreground">
@@ -47,7 +47,7 @@ export const AboutSection = () => {
 									<Code className="h-6 w-6 text-primary" />
 								</div>
 								<div className="text-left">
-									<h4 className="font-semibold text-lg"> Web development</h4>
+									<h4 className="font-semibold text-lg"> Web</h4>
 									<p className="text-muted-foreground">AUG</p>
 								</div>
 							</div>
@@ -60,7 +60,7 @@ export const AboutSection = () => {
 								<div className="text-left">
 									<h4 className="font-semibold text-lg">
 										{" "}
-										Backend development
+										Backend
 									</h4>
 									<p className="text-muted-foreground">Cyberlark</p>
 								</div>
