@@ -32,7 +32,7 @@ export const AboutSection = () => {
 							</a>
 
 							<a
-								href="/CV.pdf"
+								href="/portfolio/CV.pdf"
 								download={"My_CV"}
 								className="px-6 py-2 rounded-full c=border border-primary text-primary hover:bg-primary/10 transition-color"
 							>
@@ -58,10 +58,7 @@ export const AboutSection = () => {
 									<Code className="h-6 w-6 text-primary" />
 								</div>
 								<div className="text-left">
-									<h4 className="font-semibold text-lg">
-										{" "}
-										Backend
-									</h4>
+									<h4 className="font-semibold text-lg"> Backend</h4>
 									<p className="text-muted-foreground">Cyberlark</p>
 								</div>
 							</div>
