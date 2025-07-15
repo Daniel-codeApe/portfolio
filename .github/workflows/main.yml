@@ -23,6 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: portfolio
 
       - name: Build
         run: npm run build
