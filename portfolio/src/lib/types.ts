@@ -27,7 +27,6 @@ export interface project {
 	title: string;
 	description: string;
 	referee: string;
-	contact: string;
 }
 
 export interface cloud {

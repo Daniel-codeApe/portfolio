@@ -7,16 +7,14 @@ const projects: project[] = [
 		title: "Backend developer",
 		description:
 			"Worked as a backend developer in Cyberlark studio for around 8 months, mainly worked in a CRM project using Typescript and AWS services. The project is held on github, so I'm experienced in github actions like CI/CD. My main contributions were building & debugging Conversation & Campaign APIs, each integrated with AWS services such as DynamoDB, Lambda and API gateway. Conversation APIs also used external TWilio APIs to achieve its ability of sending and receiving SMSs.",
-		referee: "David Dai",
-		contact: "https://www.youtube.com/channel/UCykMC_fzatQPcbun0VYG3YA",
+		referee: "Available upon request",
 	},
 	{
 		id: 2,
 		title: "Web developer",
 		description:
 			"Part of the team that developed the official website for Australian Urban Growers (as graduate program). The website was mainly developed using wordpress, along with Firefox for mailing functions. During the experience, I was frequently communicating with client for their enquiries and feedbacks so I've gained many experience in client communication",
-		referee: "Christopher Fullon",
-		contact: "chris@australianurbangrowers.com",
+		referee: "Available upon request",
 	},
 ];
 
@@ -46,11 +44,6 @@ export const ProjectsSection = () => {
 								<div className="text-left mt-1 px-6">
 									<span className="text-sm text-muted-foreground">
 										Referee: {project.referee}
-									</span>
-								</div>
-								<div className="text-left mt-1 px-6">
-									<span className="text-sm text-muted-foreground">
-										Contact: {project.contact}
 									</span>
 								</div>
 							</div>
